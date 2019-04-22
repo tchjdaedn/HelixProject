@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Helix Eye In the Sky</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="static/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="static/css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="static/css/simple-line-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="static/css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="static/css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="static/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	
+	
+	<div id="fh5co-page">
+	<header id="fh5co-header" role="banner">
+		<div class="container">
+			<div class="header-inner">
+				<h1><img src="static/images/Helix_Nebula_Crcl.jpg" alt="Helix Logo" height="75" width="125" a href="index.html">Helix Eye In The Sky</a></h1>
+				<nav role="navigation">
+					<ul>
+						<li><a class="active" href="/">Home</a></li>
+						<li><a href="all_images.html">All Images</a></li>
+						<li><a href="live_feed.html">Live Feed</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div id="fh5co-intro-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 text-center">
+					<h4>Helix Eye In The Sky evaluates and identifies the content in your security camera’s images and only alerts you of the presence of any person or unrecognized automobile in your driveway – not your automobiles, your pets, wildlife, or other false alarms.</h4>
+				<br>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="fh5co-featured-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<a href="#" class="featured-grid" style="background-image: url(static/images/image_2.jpg);" img src="{{ Most_Recent_Person_Image.url}}">
+						<img src="{{Most_Recent_Person_Image}}" style="width:600px; height:338px;">
+						<div class="desc">
+							<h3>Most Recent Person Image</h3>
+							<span>{{PersonPercent}}% Predicted Person</span>
+							<div class= "container"><div class="row justify-content-center"><div class="col-md-6 text-center line grey">&nbsp;</div> </div> </div>
+							<h5><span style="color:white">Does image contain a person?</span></h5>
+  							<button type="button" class="btn btn-success btn-xs">Yes</button> 
+  							<button type="button" class="btn btn-danger btn-xs">No</button>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="featured-grid" style="background-image: url(static/images/image_2.jpg);">
+						<img src="{{ Most_Recent_Car_Image}}" style="width:600px; height:338px;">
+						<div class="desc">
+							<h3>Most Recent Unknown Vehicle Image</h3>
+							<span>{{ VehiclePercent }}% Predicted Unknown Vehicle</span>
+							<div class= "container"><div class="row justify-content-center"><div class="col-md-6 text-center line grey">&nbsp;</div> </div> </div>
+							<h5><span style="color:white">Does image contain a vehicle?</span></h5>
+  							<button type="button" class="btn btn-success btn-xs">Yes</button> 
+  							<button type="button" class="btn btn-danger btn-xs">No</button>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="featured-grid" style="background-image: url(static/images/image_2.jpg);">
+						<img src="{{Most_Recent_NonAlert_Image}}" style="width:600px; height:338px;">
+						<div class="desc">
+							<h3>Most Recent Non-Alert Image </h3>
+							<span>{{OtherPercent}}% XCP Value</span>
+							<div class= "container"><div class="row justify-content-center"><div class="col-md-6 text-center line grey">&nbsp;</div> </div> </div>
+							<h5><span style="color:white">Does image contain a person or vehicle?</span></h5>
+							<button type="button" class="btn btn-success btn-xs">Yes, Person</button>
+							<button type="button" class="btn btn-success btn-xs">Yes, Vehicle</button> 
+  							<button type="button" class="btn btn-danger btn-xs">No</button>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>	
+	<footer id="fh5co-footer" role="contentinfo">
+
+		<div class="col-md-12 fh5co-copyright text-center">
+            <h5><font color="grey">Designed by Team Helix (Brandon F., Raleigh L., Franko O., & Scott S.)</font></h5>
+            <h6><span><font color="grey">2019 Data Analytics & Visualization Bootcamp</span></font></h6>	
+		</div>
+			
+	</footer>
+	</div>
+	
+	
+	<!-- jQuery -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="static/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="static/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="static/js/jquery.waypoints.min.js"></script>
+	<!-- MAIN JS -->
+	<script src="static/js/main.js"></script>
+
+	</body>
+</html>
+
